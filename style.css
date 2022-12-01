@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    min-width: 550px;
+}
+
+.title-bar {
+    align-items: center;
+    background-color: #F55A5A;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    column-gap: 7px;
+    height: 55px;
+    justify-content: center;
+    letter-spacing: -0.075em;   
+}
+
+.title-bar__icon {
+    width: 24px;
+    height: auto;
+}
+
+.title-bar--title {
+    height: fit-content;
+}
+
+.journal {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 40px;
+}
+
+.entry {
+    color: #2B283A;
+    display: flex;
+    flex-direction: row;
+    height: 168px;
+    margin: 18px;
+    width: 90%;
+    max-width: 700px;
+}
+
+.entry--photo {
+    border-radius: 5px;
+    height: 168px;
+    margin-right: 20px;
+    object-fit: cover;
+    width: 126px;
+}
+
+.entry--info-box {
+    font-size: 10px;
+    padding-top: 12px
+}
+
+.entry--map-row {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    grid-gap: 12px;
+    justify-content: flex-start;
+}
+
+.entry--map-row--pin {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    grid-gap: 4px;
+    justify-content: flex-start;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0.17em;
+    text-align: left;
+}
+
+.entry--map-row--pin img {
+    height: 10px;
+}
+
+.entry--map-row--link a:link,
+.entry--map-row--link a:visited {
+    color: #918E9B;
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: left;
+    text-decoration-line: underline;
+}
+
+.entry--title{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-top: 7px;
+    margin-bottom: 14px;
+    text-align: left;
+}
+
+.entry--date-range {
+    font-weight: 700;
+    line-height: 12px;
+    text-align: left;
+}
+
+
+.entry--text {
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+}
+
+.hr {
+    border: 1px solid #F5F5F5;
+    width: 90%;
+}
